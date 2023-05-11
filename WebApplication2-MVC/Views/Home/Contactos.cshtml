@@ -1,0 +1,84 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Contacto";
+}
+
+
+<style>
+
+</style>
+
+<script>
+
+    function GetTime() {
+
+        console.log("Entro");
+
+        var url = "@Url.Action("GetDate", "Home")"
+
+        /*fetch(url)
+        .then(response => response.json())
+        .then(data => alert(data))*/
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                var json = JSON.parse(data)
+
+                alert(json["Time"]);
+            })
+    }
+
+    
+</script>
+
+<div id="Contacto">
+    <h1 class="class-contact">Página Contacto</h1>
+    <div class="card-contacto">
+        <button id="contacto-btn" onclick="GetTime()">Contactar</button>
+        <p>Contactame</p>
+        <p><span>Nombre: </span>Victor Miguel Basurto Juarez</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+        <p><span>Telefono: </span> +52 8712655150</p>
+    </div>
+</div>
